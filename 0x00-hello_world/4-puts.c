@@ -1,8 +1,16 @@
 #include <stdio.h>
-int main (void)
-{
-	char new [] = "\"Programming is like building a multilingual puzzle\n";
-	puts(new);
-	return(0);
-}
 
+/**
+*main - Starting point of the program
+*
+*Return: 0 as default value
+*/
+
+int main(void)
+{
+	char new[] = "\"Programming is like building a multilingual puzzle";
+
+	puts(new);
+
+	return (0);
+}
