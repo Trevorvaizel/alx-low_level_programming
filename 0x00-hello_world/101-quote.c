@@ -1,7 +1,15 @@
 #include <stdio.h>
+
+/**
+*main - Starting point of the program
+*
+*Return: 1 as default value
+*/
+
 int main(void)
 {
-	printf(stderror,"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	fprintf(stderr, "and that piece of art is")
+	fprintf(" useful\" - Dora Korpar, 2015-10-19\n");
+
 	return (1);
 }
-
