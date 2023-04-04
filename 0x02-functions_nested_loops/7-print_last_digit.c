@@ -19,7 +19,9 @@ int print_last_digit(int a)
 		return (c % 10);
 	}
 	else
+	{
 		_putchar((a % 10) + '0');
 
 		return (a % 10);
+	}
 }
