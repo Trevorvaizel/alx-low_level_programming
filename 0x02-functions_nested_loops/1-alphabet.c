@@ -1,5 +1,4 @@
 #include "main.c"
-#include "_putchar.c"
 
 /**
  * print_alphabet - prints alphabets
