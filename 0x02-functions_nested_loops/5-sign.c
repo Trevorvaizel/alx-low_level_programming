@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_sign - shows negative
- *@n: input integer
+ * print_sign - prints sign
+ * @n: input integer
  *
- * Return: 1,0, -1
+ * Return: 1, 0, -1
  *
  */
 
@@ -20,7 +20,7 @@ int print_sign(int n)
 		_putchar(0 + '0');
 		return (0);
 	}
-	else if (n < 0)
+	else
 	{
 		_putchar('-');
 		return (-1);
