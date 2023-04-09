@@ -12,6 +12,4 @@ void reset_to_98(int *n)
 {
     /* change what the pointer adress contains*/
     *n = 98;
-
-    return (void);
 }
