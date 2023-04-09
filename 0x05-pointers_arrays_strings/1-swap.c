@@ -2,20 +2,19 @@
 #include "main.h"
 
 /**
- * swap_int - swamps values 
+ * swap_int - swaps values
  * @a: parameter 1
  * @b: parameter 2
- * 
+ *
  * Return: void
-*/
+ */
 
-void swap_int(int *a, int *b )
+void swap_int(int *a, int *b)
 {
-    /*initialize the variables*/
-    int temp;
+	int temp;
 
-    temp = *a;
-    *a = *b;
-    *b = temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
