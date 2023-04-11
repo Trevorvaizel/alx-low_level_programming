@@ -13,7 +13,7 @@
 void puts_half(char *str)
 {
         int len;
-        int index;
+	int half;
 
         for(len = 0; *(str + len) != '\0'; len++)
         {
@@ -22,22 +22,23 @@ void puts_half(char *str)
         /** check whether len is */
         if (len % 2 != 0)
         {
-                index = (len - 1) / 2;
+                half = (len - 1) / 2;
                 /** here we already have half the index*/
                 /** next step is to instruct it where to begin */
-                while (index >= len / 2)
+                while (half <= len)
                 {
-                        putchar(*(str + index));
+			putchar(*(str + half));
+			half++;
                 }
         }
         else
-        {
-                index = len / 2;
-                while (index >= len / 2)
-                {
-                        putchar(*(str + index));
-                }
-        }
+	{
+		half = len / 2;
+		while (half <= len)
+		{
+			putchar(*(str + half));
+			half++
+		}
         putchar('\n');
 }
 
