@@ -16,7 +16,7 @@ char *_strcpy(char *dest, char *src)
 	int len;
 
 	/* get the size of the string **/
-	for (len = 0; *(src + len) != '\0'; len++)
+	for (len = 0; *(src + len) <= '\0'; len++)
 	{
 	}
 	/*now i have the len of string*/
