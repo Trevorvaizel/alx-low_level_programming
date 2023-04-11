@@ -13,8 +13,7 @@
 void puts_half(char *str)
 {
         int len;
-        int index;
-        int half;
+        int inde;
 
         for(len = 0; *(str + len) != '\0'; len++)
         {
