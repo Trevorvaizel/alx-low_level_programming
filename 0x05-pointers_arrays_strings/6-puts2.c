@@ -1,20 +1,29 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * puts2 - prints string characters
- * @str: parameter pointer
- *
- * Return: 1
- */
+*puts2 - Print characters of a string
+*@str: String to print
+*/
 
 void puts2(char *str)
 {
-	int i;
+	int len = 0;
+	int l = 0;
+	char *y = str;
+	int z;
 
-	for (i = 0; *(str + i) != '\0'; (i = i + 2))
+	while (*y != '\0')
 	{
-		putchar(*(str + i));
+		y++;
+		len++;
 	}
-	putchar('\n');
+	l = len - 1;
+	for (z = 0; z <= l; z++)
+	{
+		if (z % 2 == 0)
+		{
+			_putchar(str[z]);
+		}
+	}
+	_putchar('\n');
 }
