@@ -40,5 +40,4 @@ void puts_half(char *str)
 			half++;
 		}
 	}
-        putchar('\n');
 }
