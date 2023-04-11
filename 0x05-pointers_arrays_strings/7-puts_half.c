@@ -3,8 +3,6 @@
 
 /**
  * puts_half - prints yada yada
- * @len: sring legnth
- * @half: half string
  * @str: parameter
  *
  * Return: void
