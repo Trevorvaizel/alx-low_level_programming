@@ -4,8 +4,8 @@
 /**
  * puts_half - prints yada yada
  * @len: sring legnth
- * @index: string indexes
  * @half: half string
+ * @str: parameter
  *
  * Return: void
  */
