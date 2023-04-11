@@ -24,7 +24,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		*(dest + index) = (*src + index);
 	}
-	len = len + 1;
 	*(dest + len) = *(src + len);
 
 	return (dest);
