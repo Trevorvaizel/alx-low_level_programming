@@ -19,6 +19,6 @@ int _sqrt_recursion(int n)
 	else if(n == 0)
 	{
 		return n + _sqrt_recursion(n - odd);
-		odd = odd -2;
 	}
+	odd = odd - 2;
 }
