@@ -19,7 +19,6 @@ void _print_rev_recursion(char *s)
 		return;
 	/**this prints the last string */
 	_putchar(*(s + len));
-	len--;
 	/** here its the adress thats changing */
-	_print_rev_recursion(s);
+	_print_rev_recursion( s + (len - 1);
 }
