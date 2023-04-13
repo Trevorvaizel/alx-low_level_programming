@@ -13,7 +13,7 @@ void _print_rev_recursion(char *s)
 {
 	int len;
 
-	len = strlen(s) - 1#include "main.h"
+	len = strlen(s) - 1;
 
 /**
 *_print_rev_recursion - Preint string in reverse
