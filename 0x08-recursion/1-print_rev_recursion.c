@@ -13,7 +13,20 @@ void _print_rev_recursion(char *s)
 {
 	int len;
 
-	len = strlen(s) - 1;
+	len = strlen(s) - 1#include "main.h"
+
+/**
+*_print_rev_recursion - Preint string in reverse
+*@s: Pointer to string
+*/
+void _print_rev_recursion(char *s, len)
+{
+	if (*s)
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
+};
 	/** this terminates the code */
 	if (len < 0)
 		return;
