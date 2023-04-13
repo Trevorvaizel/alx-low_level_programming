@@ -4,7 +4,7 @@
  * factorial - gets factorial
  * @n: - factor
  *
- * Return 0;
+ * Return: 0,1 -1
  *
  */
 int factorial(int n)
@@ -19,6 +19,6 @@ int factorial(int n)
 	}
 	else
 	{
-		return (n * factorial(n-1));
+		return (n * factorial(n - 1));
 	}
 }
