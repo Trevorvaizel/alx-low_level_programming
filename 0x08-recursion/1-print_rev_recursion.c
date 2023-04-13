@@ -17,7 +17,6 @@ void _print_rev_recursion(char *s)
 	if (len < 0)
 		return;
 	_putchar(*(s + len));
-	len--;
 	/** here its the adress thats changing */
 	_print_rev_recursion(s - 1);
 }
