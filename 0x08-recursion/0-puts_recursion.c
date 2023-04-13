@@ -13,7 +13,7 @@ void _print_rev_recursion(char *s)
 	if (*s == '\0')
 	{
 		_putchar('\n');
-		return 0;
+		return (void);
 	}
 	_putchar(*s);
 	_putchar(*(s + 1));
