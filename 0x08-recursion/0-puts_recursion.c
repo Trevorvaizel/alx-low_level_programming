@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion - prints string
- * @str: parameters
+ * @s: parameters
  *
  * Return: void
  *
@@ -16,5 +16,5 @@ void _puts_recursion(char *s)
 		return;
 	}
 	_putchar(*s);
-	_putchar(*(s + 1));
+	_puts_recursion(s + 1);
 }
