@@ -1,5 +1,5 @@
 #!bin/bash
 
-gcc -c *.c
+gcc -c -Wall -Werror *.c
 
-ar -rc liball.a *.o 
+ar -rcs liball.a *.0
