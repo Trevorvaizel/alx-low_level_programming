@@ -1,3 +1,3 @@
 #!bin/bash
 
-gcc -c -Wall -Werror ./*.c && ar -rc liball.a ./*.o
+gcc -c -O -g ./*.c && ar -rc liball.a ./*.o
