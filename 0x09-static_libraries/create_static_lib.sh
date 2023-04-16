@@ -2,4 +2,4 @@
 
 gcc -c -Wall -Werror *.c
 
-ar -rcs liball.a *.0
+ar -rcs liball.a *.o
