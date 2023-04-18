@@ -1,44 +1,25 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * Author: Trevor
- * Date: 4.19.2023
- */
-
-/**
- * *create_array: returns pointer to created array
- * @size: array size
- * @c: characters to be initialized
- *
- * Return: 0, NULL, NULL
- *
- */
-
+*create_array - Create an array using malloc
+*@size: Size of array
+*@c: Character to add in array
+*
+*Return: Pointer to created array
+*/
 char *create_array(unsigned int size, char c)
 {
-	int *arr;
-	int i;
-	int arri;
-	char *str;
+	char *arr;
+	unsigned int i;
 
-	/** check if size is zero*/
 	if (size == 0)
 		return (NULL);
-	/**create memory in space for array*/
-	arr = malloc(sizeof(char) * size);
-	/**space has been created
-	 * now initialize characters in c to each memory block
-	 */
-	arri = size - 1;
-	str = c;
+
+	arr = malloc(size * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
-	for (i = 0; i <= arri; i++)
-	{
-		arr[i] = str[i];
-	}
-
-	return (0);
+	for (i = 0; i < size; i++)
+		arr[i] = c;
+	return (arr);
+	free(arr);
 }
