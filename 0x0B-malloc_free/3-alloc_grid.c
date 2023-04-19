@@ -14,6 +14,7 @@ int **alloc_grid(int width, int height)
 	int w;
 	int h;
 	int *ptr;
+	int **pptr;
 	int count;
 
 	if (width <= 0 && height <= 0)
@@ -36,5 +37,6 @@ int **alloc_grid(int width, int height)
 		*(ptr + (width * count + height)) = 0;
 		h++;
 	}
-	return (ptr);
+	pptr = &ptr;
+	return (pptr);
 }
