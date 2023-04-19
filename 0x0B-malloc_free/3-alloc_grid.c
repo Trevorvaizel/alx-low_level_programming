@@ -16,8 +16,8 @@ int **alloc_grid(int width, int height)
 	int *ptr;
 	int **pptr;
 	int count;
-
-	if (width <= 0 && height <= 0)
+	
+	if (width < 1 && height < 1)
 		return (NULL);
 	/** assign memory to arrays */
 	count = width * height;
