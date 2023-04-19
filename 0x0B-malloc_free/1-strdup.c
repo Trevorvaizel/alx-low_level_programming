@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	int i;
 
 	str = malloc(sizeof(char) * alen);
-	nest = str;
+	nstr = str;
 	/** we now have the array str */
 	if (str == NULL)
 		return (NULL);
