@@ -21,9 +21,9 @@ char *str_concat(char *s1, char *s2)
 	int j;
 
 	/**find the string lenths of both */
-	c1 = strlen(s1);
+	c1 = strlen(s1 + 1);
 	c2 = strlen(s2 + 1);
-	len  = strlen(s1) + strlen(s2 + 1);
+	len  = c1 + c2 + 1;
 	s3 = malloc(sizeof(char) * len);
 	/**check for malloc faliure*/
 	if (s3 == NULL)
