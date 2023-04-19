@@ -21,26 +21,24 @@ char *str_concat(char *s1, char *s2)
 	int j;
 
 	/**find the string lenths of both */
-	c1 = strlen(s1 + 1);
-	c2 = strlen(s2 + 1);
+	c1 = strlen(s1);
+	c2 = strlen(s2);
 	len  = c1 + c2 + 1;
 	s3 = malloc(sizeof(char) * len);
 	/**check for malloc faliure*/
 	if (s3 == NULL)
 		return (NULL);
 	/** add c1 */
-	for (i = 0; i <= c1 && i <= len; i++)
+	for (i = 0; i <= c1; i++)
 	{
 		s3[i] = s1[i];
 	}
 	/** add c2 */
-	while (i <= len && j <= c2)
+	while (j <= c2)
 	{
 		j = 0;
-		s3[i] = s2[j];
+		s3[i + j] = s2[j];
 		j++;
-		i++;
 	}
 	return (s3);
-	free(s3);
 }
