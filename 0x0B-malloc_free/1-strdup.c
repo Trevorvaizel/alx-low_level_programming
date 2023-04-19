@@ -18,8 +18,7 @@ char *_strdup(char *str)
 	int alen = count + 1;
 	int i;
 
-	str = malloc(sizeof(char) * alen);
-	nstr = str;
+	nstr = malloc(sizeof(char) * alen);
 	/** we now have the array str */
 	if (nstr == NULL)
 		return (NULL);
@@ -28,6 +27,4 @@ char *_strdup(char *str)
 		nstr[i] = str[i];
 	}
 	return (nstr);
-	free(str);
-	free(nstr);
 }
