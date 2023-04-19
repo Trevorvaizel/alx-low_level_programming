@@ -18,14 +18,16 @@ char *_strdup(char *str)
 	int alen = count + 1;
 	int i;
 
-	nstr = malloc(sizeof(char) * alen);
+	str = malloc(sizeof(char) * alen);
+	nstr = str;
 	/** we now have the array str */
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; i < alen; i++)
+	for (i = 0; i <= alen; i++)
 	{
 		str[i] = nstr[i];
 	}
-	return (nstr);
 	free(str);
+
+	return (nstr);
 }
