@@ -17,7 +17,9 @@ char *_strdup(char *str)
 	int count = strlen(str);
 	int alen = count + 1;
 	int i;
-
+	
+	if (count == 0)
+		return (NULL);
 	nstr = malloc(sizeof(char) * alen);
 	/** we now have the array str */
 	if (nstr == NULL)
