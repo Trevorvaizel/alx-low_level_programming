@@ -21,11 +21,11 @@ char *_strdup(char *str)
 	str = malloc(sizeof(char) * alen);
 	nstr = str;
 	/** we now have the array str */
-	if (str == NULL)
+	if (nstr == NULL)
 		return (NULL);
 	for (i = 0; i <= alen; i++)
 	{
-		str[i] = nstr[i];
+		nstr[i] = str[i];
 	}
 	free(str);
 
