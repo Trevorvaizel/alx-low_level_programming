@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * init_dog - initializes 
+ * init_dog - initializes
  * @d: dog
  * @name: name
  * @age: age
