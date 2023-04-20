@@ -18,22 +18,27 @@ int *array_range(int min, int max)
 	int count;
 
 	if (min > max)
-		return (NULL);
-	/** allocate the memory */
-	count = (max - min) + 1;
-	arr = malloc(count * sizeof(int));
-	if (arr == 0)
-		return (NULL);
-	/**lets key in the values **/
-	i = 0;
-	for (i = 0; i < count; i++)
 	{
-		while (min <= max)
-		{
-			*(arr + i) = min;
-			min++;
-		}
+		return (NULL);
 	}
+	/** allocate the memory */
+	else
+	{
+		count = (max - min) + 1;
+		arr = malloc(count * sizeof(int));
+		if (arr == 0)
+			return (NULL);
+		/**lets key in the values **/
+		i = 0;
+		for (i = 0; i < count; i++)
+		{
+			while (min <= max)
+			{
+				*(arr + i) = min;
+				min++;
+			}
+		}
 
-	return (arr);
+		return (arr);
+	}
 }
