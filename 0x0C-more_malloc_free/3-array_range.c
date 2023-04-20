@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * array_rang - prints arrays
+ * array_range - prints arrays
  * @min: minumum
  * @max: maximum
  *
