@@ -1,27 +1,23 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * _calloc - allocates memory
- * @nmemb: no.of.items
- * @size: size of elements
- *
- * Return:pointer toarr
+ * _calloc - Main Entry
+ * @nmemb: input
+ * @size: input
+ * Return: 0
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *arr;
+	char *p;
 	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	arr = malloc(nmemb * size);
-	if (arr == 0)
+	p = malloc(nmemb * size);
+	if (p == NULL)
 		return (NULL);
-	i = 0;
-	for (i = 0; i < nmemb; i++)
-		*(arr + i) = 0;
-	return (arr);
+	for (i = 0; i < (nmemb * size); i++)
+		p[i] = 0;
+	return (p);
 }
