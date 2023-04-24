@@ -1,17 +1,19 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
- * free_grid - Frees a 2-dimensional array of integers.
- * @grid: The 2-dimensional array of integers to be freed.
- * @height: The height of grid.
+ * free_grid - frees a 2 dimensional grid.
+ * @grid: multidimensional array of integers.
+ * @height: height of the grid.
+ *
+ * Return: no return
  */
 void free_grid(int **grid, int height)
 {
-	int index;
-
-	for (index = 0; index < height; index++)
-		free(grid[index]);
-
-	free(grid);
+	if (grid != NULL && height != 0)
+	{
+		for (; height >= 0; height--)
+			free(grid[height]);
+		free(grid);
+	}
 }
