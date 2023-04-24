@@ -1,30 +1,39 @@
 #include "main.h"
-#include <string.h>
 #include <stdlib.h>
-#include <stdio.h>
-
 /**
- * _strdup - duplicates string
- * @str: string parameter
- *
- * Return: pointer to new string
+ * _strdup - Main Entry
+ * @str: input
+ * Return: 0
  */
-
 char *_strdup(char *str)
 {
-	/**new string = *nstr*/
 	char *nstr;
-	int count = strlen(str);
-	int alen = count + 1;
-	int i;
+	unsigned int len, i;
 
-	nstr = malloc(sizeof(char) * alen);
-	/** we now have the array str */
-	if (nstr == NULL)
+	/* check is str is null */
+	if (str == NULL)
+	{
 		return (NULL);
-	for (i = 0; i <= alen; i++)
+	}
+
+	len = 0;
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+
+	nstr = malloc(sizeof(char) * (len + 1));
+
+	/*check if malloc was successful*/
+	if (nstr == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < len; i++)
 	{
 		nstr[i] = str[i];
 	}
+	nstr[len] = '\0';
 	return (nstr);
 }
