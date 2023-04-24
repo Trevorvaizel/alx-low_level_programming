@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	printf("Name of source file: %s\n", _FILE_);
+	printf("Name of source file: %s\n", __FILE__);
 
 	return (0);
 }
