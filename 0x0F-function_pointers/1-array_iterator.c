@@ -16,10 +16,9 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	size_t i;
 
 	/** initialize the array */
-	array = malloc(sizeof(int) * size);
 	i = 0;
 	for (i = 0; i < size; i++)
 	{
-		action(*(a + i));
+		action(array[i]);
 	}
 }
