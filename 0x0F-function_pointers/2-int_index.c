@@ -16,18 +16,17 @@ int int_index(int *array, int size, int (*cmp)(int))
 	int ret;
 
 	i = 0;
-	ret = cmp(array[i]);
-
 	if (array == NULL || size <= 0 || cmp == NULL)
 	{
 		return (-1);
 	}
 	/** checks whether there is a return value */
-	for (i = 0; i < size; i++)
+	while (i < size)
 	{
-		if (ret != 0)
-			return (i);
+		ret = cmp(array[i]);
+		if (ret == 0)
+			i++;
+		return (i);
 	}
-
 	return (-1);
 }
