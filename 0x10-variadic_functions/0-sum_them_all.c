@@ -1,9 +1,3 @@
-/**
- * Author: trevor
- * Date: 4.30.223
- *
- */
-
 #include <stdarg.h>
 #include "variadic_functions.h"
 
