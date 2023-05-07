@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include <stdargs.h>
-#include "variadic_functions"
+#include <stdarg.h>
+#include "variadic_functions.h"
 
 /**
  * print_numbers - prints functions
  * @seperator: pointer to seperator
  * @n: arguments
  *
- * Return: n 
+ * Return: n
  */
 
 void print_numbers(const char *seperator, const unsigned int n, ...)
@@ -25,7 +25,7 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		{
 			printf(" %d", value);
 		}
-		else 
+		else
 		{
 			printf(" %d%s", value, seperator);
 		}
