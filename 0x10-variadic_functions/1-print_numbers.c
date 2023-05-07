@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdargs.h>
+#include "variadic_functions"
 
 /**
  * print_numbers - prints functions
@@ -12,14 +13,14 @@
 void print_numbers(const char *seperator, const unsigned int n, ...)
 {
 	/**initialize the var list variable */
-	var_list args;
+	va_list args;
 	unsigned int i;
 	unsigned int value;
 
-	var_start(args, n);
+	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		value = var_arg(args, unsigned int);
+		value = va_arg(args, unsigned int);
 		if (seperator == NULL)
 		{
 			printf(" %d", value);
