@@ -1,9 +1,10 @@
-/* Author: trevor 
+/**
+ * Author: trevor
  * Date: 4.30.223
  *
  */
 
-#include <stdargs.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
@@ -17,19 +18,19 @@ int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
 	unsigned int sum = 0;
-	var_list args;
+	va_list args;
 
 	if  (n == 0)
 	{
 		return (0);
 	}
 	/** initialize the first n **/
-	var_start (args, n);
+	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		sum += (var_arg(args, int));
+		sum += (va_arg(args, int));
 	}
-	var_end(args);
+	va_end(args);
 
 	return (sum);
 }
