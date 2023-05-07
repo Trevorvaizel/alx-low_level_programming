@@ -25,10 +25,11 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 		{
 			printf("%d", value);
 		}
-		else
+		while (i < n - 1)
 		{
 			printf("%d%s", value, seperator);
 		}
+		printf("%d", value);
 	}
 	printf("\n");
 }
