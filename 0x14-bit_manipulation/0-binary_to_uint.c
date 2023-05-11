@@ -47,7 +47,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		if (*(b + index) == '1')
 		{
-			value = Power(2,count);
+			value = Power(2, count);
 			sum += value;
 		}
 		count--;
