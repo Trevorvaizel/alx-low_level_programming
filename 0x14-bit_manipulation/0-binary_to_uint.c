@@ -33,6 +33,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int value;
 	int count = strlen(b);
 
+	if (b == NULL)
+		return (0);
 	/**check for availability of invalid figures **/
 	for (index = 0; index < count; index++)
 	{
