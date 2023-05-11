@@ -45,5 +45,6 @@ unsigned int binary_to_uint(const char *b)
 			value = Power(2, index);
 			sum += value;
 		}
+	}
 	return (sum);
 }
