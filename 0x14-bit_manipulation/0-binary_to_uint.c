@@ -31,12 +31,15 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int sum = 0;
 	int index;
 	unsigned int value;
-	int count = strlen(b);
+	int count;
 
-	if (!b)
+	for (b == NULL)
+	{
 		return (0);
+	}
+	 count = strlen(b);
 	/**check for availability of invalid figures **/
-	for (index = 0; index < count; index++)
+	for (index = (count - 1); *(b + index) != '\0'; index--)
 	{
 		if (*(b + index) != '0' && *(b + index) != '1')
 		{
