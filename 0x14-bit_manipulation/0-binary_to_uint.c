@@ -4,6 +4,21 @@
 #include <string.h>
 
 /**
+ *Power - Rase a base to power
+ *@a: Base
+ *@b: Exponent
+ *
+ *Return: a ^ b
+ */
+int Power(int a, int b)
+{
+	int power = 1, i;
+
+	for (i = 1; i <= b; ++i)
+		power = power * a;
+	return (power);
+}
+/**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: points to a string of 0 and 1 chars.
  *
@@ -27,7 +42,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		if (*(b + index) == '1' && index < (count - 1))
 		{
-			value = pow(2, index);
+			value = Power(2, index);
 			sum += value;
 		}
 		else
