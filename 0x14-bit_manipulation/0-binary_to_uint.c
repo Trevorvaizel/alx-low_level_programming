@@ -33,7 +33,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int value;
 	int count = strlen(b);
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 	/**check for availability of invalid figures **/
 	for (index = 0; index < count; index++)
@@ -42,7 +42,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		if (*(b + index) == '1' && index < count)
+		if (*(b + index) == '1')
 		{
 			value = Power(2, index);
 			sum += value;
