@@ -37,9 +37,9 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (0);
 	}
-	 count = strlen(b);
+	 count = strlen(b) - 1;
 	/**check for availability of invalid figures **/
-	for (index = (count - 1); *(b + index) != '\0'; index--)
+	for (index = 0; *(b + index) != '\0'; index++)
 	{
 		if (*(b + index) != '0' && *(b + index) != '1')
 		{
@@ -47,9 +47,10 @@ unsigned int binary_to_uint(const char *b)
 		}
 		if (*(b + index) == '1')
 		{
-			value = Power(2, index);
+			value = Power(2,count);
 			sum += value;
 		}
+		count--;
 	}
 	return (sum);
 }
