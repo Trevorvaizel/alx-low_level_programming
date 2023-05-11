@@ -33,7 +33,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int value;
 	int count;
 
-	for (b == NULL)
+	if (b == NULL)
 	{
 		return (0);
 	}
