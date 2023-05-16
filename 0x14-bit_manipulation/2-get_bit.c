@@ -29,27 +29,27 @@ unsigned long int get_size(int x)
 }
 
 /**
- * get_binary - gets the binary of a number 
+ * get_binary - gets the binary of a number
  * @x: passed parameter
  *
  * Return: bin
  */
 
-unsigned long int* get_bin(int x)
+unsigned long int *get_bin(int x)
 {
 	unsigned long int *bin;
 	unsigned long int sum = get_size(x);
 	unsigned long int i;
 
 	/** assign malloc **/
-	bin = (unsigned long int*) malloc(sizeof(unsigned long int) * sum);
+	bin = (unsigned long int *) malloc(sizeof(unsigned long int) * sum);
 	/**test for malloc */
 	if (bin == NULL)
 	{
 		return (NULL);
 	}
 	/** create bin array **/
-	for (;x > 1 ;)
+	for (; x > 1 ;)
 	{
 		for (i = 0; i < sum; i++)
 		{
