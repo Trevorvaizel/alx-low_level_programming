@@ -29,7 +29,7 @@ unsigned long int get_size(int x)
 }
 
 /**
- * get_binary - gets the binary of a number
+ * get_bin - gets the binary of a number
  * @x: passed parameter
  *
  * Return: bin
