@@ -78,12 +78,13 @@ unsigned long int *get_bin(int x)
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int i;
+	unsigned int i = index;
 	int value;
+	unsigned long int *bin;
 
 	/** get pointer to binary **/
 	bin = get_bin(n);
-	value = bin[index];
+	value = bin[i];
 
 	return (value);
 }
