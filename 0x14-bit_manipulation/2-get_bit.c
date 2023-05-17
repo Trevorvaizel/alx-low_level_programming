@@ -83,7 +83,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned long int *bin;
 	unsigned long int size = get_size(n);
 	
-	if (index > size)
+	if (index < size)
 	{
 		/** get pointer to binary **/
 		bin = get_bin(n);
