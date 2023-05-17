@@ -81,12 +81,20 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int i = index;
 	int value;
 	unsigned long int *bin;
+	unsigned long int size = get_size(x);
+	
+	if (index > size)
+	{
+		/** get pointer to binary **/
+		bin = get_bin(n);
+		value = bin[i];
 
-	/** get pointer to binary **/
-	bin = get_bin(n);
-	value = bin[i];
-
-	return (value);
+		return (value);
+	}
+	else
+	{
+		return (-1);
+	}
 }
 
 
