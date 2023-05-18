@@ -10,18 +10,20 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	int filedescriptor;
+	ssize_t i;
+	char *buffer;
+
 	if (filename == NULL)
 	{
 		return (0);
 	}
-	/** open file */
-	int filedescriptor = open(filename, O_RDONLY);
-	ssize_t i;
-	/** check for success */
+
+	filedecsriptor = open(filename, O_RDONLY);
 	if (filedescriptor == -1)
 		return (0);
-	/** read file and store result in buffer */
-	char *buffer = malloc((letters) * sizeof(char));
+
+	buffer = malloc((letters) * sizeof(char));
 
 	if (buffer == NULL)
 	{
