@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	filedecsriptor = open(filename, O_RDONLY);
+	filedescriptor = open(filename, O_RDONLY);
 	if (filedescriptor == -1)
 		return (0);
 
