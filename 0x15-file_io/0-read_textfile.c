@@ -1,8 +1,4 @@
 #include "main.h"
-#include <stddef.h>
-#include <stdio.h>
-#include <fcntl.h>
-#include <unistd.h>
 
 /**
  * read_textfile - reads textfile and prints
