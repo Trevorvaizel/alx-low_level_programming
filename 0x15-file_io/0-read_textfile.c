@@ -42,7 +42,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		{
 			putchar(buffer[i]);
 		}
-		putchar('\n');
 	}
 	close(filedescriptor);
 	return (bytesRead);
